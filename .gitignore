@@ -1,0 +1,214 @@
+# Fantasy Football ML Project .gitignore
+
+# =======================
+# DATA FILES (Large files that shouldn't be in git)
+# =======================
+data/*.csv
+data/*.pkl
+data/*.parquet
+data/*.json
+data/*.xlsx
+data/*.db
+
+# Keep only metadata and small config files
+!data/dataset_metadata.json
+!data/config.json
+!data/README.md
+
+# =======================
+# PYTHON
+# =======================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+fantasy_football_env/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# =======================
+# JUPYTER NOTEBOOKS
+# =======================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Jupyter Notebook output (comment out if you want to keep outputs)
+# *.ipynb
+
+# =======================
+# MACHINE LEARNING
+# =======================
+# Model files (can be large)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.ckpt
+models/*.pb
+
+# Keep model metadata
+!models/model_info.json
+!models/README.md
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Weights & Biases
+wandb/
+
+# TensorBoard logs
+logs/
+tensorboard_logs/
+
+# =======================
+# IDE & EDITORS
+# =======================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# =======================
+# OPERATING SYSTEM
+# =======================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# =======================
+# LOGS & TEMPORARY FILES
+# =======================
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+temp/
+
+# =======================
+# SECRETS & CREDENTIALS
+# =======================
+# API keys and secrets
+secrets.json
+credentials.json
+.credentials
+api_keys.txt
+*.pem
+*.key
+
+# =======================
+# BACKUP & ARCHIVE FILES
+# =======================
+*.bak
+*.backup
+*.old
+*.orig
+*.zip
+*.tar.gz
+*.rar
+
+# =======================
+# TESTING
+# =======================
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# =======================
+# DOCUMENTATION
+# =======================
+# Sphinx documentation
+docs/_build/
+site/
+
+# =======================
+# MISC
+# =======================
+# Cache files
+.cache/
+*.cache
+
+# Local configuration
+local_config.py
+local_settings.py
+
+# Scraped data (if you add web scraping)
+scraped_data/
+raw_data/
+
+# Large output files
+outputs/
+results/
+plots/
